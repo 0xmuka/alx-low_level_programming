@@ -6,19 +6,22 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
-{
-int number;
+#include <stdio.h>
 
-for (number = 1; number < 90; number++)
-{
-putchar('0' + (number / 10));
-putchar('0' + (number % 10));
-if (number != 89)
-{
+int main(void) {
+for (int tens = 0; tens <= 8; ++tens) {
+for (int ones = tens + 1; ones <= 9; ++ones) {
+putchar('0' + tens);
+putchar('0' + ones);
+
+if (tens != 8 || ones != 9) {
 putchar(',');
 putchar(' ');
 }
 }
-return (0);
 }
+
+putchar('\n');
+return 0;
+}
+
