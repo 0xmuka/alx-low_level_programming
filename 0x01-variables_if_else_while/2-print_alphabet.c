@@ -10,7 +10,7 @@
 int main(void)
 {
 	char *a = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	long unsigned int i;
 
 	for (i = 0; i < strlen(a); i++)
 		putchar(a[i]);
