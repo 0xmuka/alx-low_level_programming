@@ -6,16 +6,14 @@
  */
 int main(void)
 {
-
-char muza[] = "_putchar";
-
-size_t i;
-
-for (i = 0; i < strlen(muza); i++)
-{
-_putchar (muza[i]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
-_putchar ('\n');
-return (0);
-}
-

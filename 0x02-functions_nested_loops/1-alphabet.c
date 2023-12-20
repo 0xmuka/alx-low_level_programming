@@ -5,11 +5,10 @@
  */
 void print_alphabet(void)
 {
-char *a = "abcdefghijklmnopqrstuvwxyz";
-size_t i;
+	char letter;
 
-for (i = 0; i < strlen(a); i++)
-_putchar(a[i]);
-_putchar('\n');
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
 
+	_putchar('\n');
 }
