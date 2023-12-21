@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * swap_int - swaps the value of int a and int b
 * Owned by Bwave/Bright
@@ -7,13 +6,11 @@
 * @b: second int
 * Return 0
 */
-
 void swap_int(int *a, int *b)
 {
-int s;
+		int s;
 
-s = *a;
-*a = *b;
-*b = s;
-
+		s = *a;
+		*a = *b;
+		*b = s;
 }
